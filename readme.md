@@ -6,3 +6,5 @@ Service developed and tested on CentOS 8 Stream
 2.sudo cp 2.service /etc/systemd/system
 
 3.systemctl start 2.service
+
+4.systemctl enable 2.service

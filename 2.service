@@ -1,0 +1,14 @@
+[Unit]
+Description=arp -i eth0
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=60
+User=ar
+ExecStart=/bin/bash -c 'bash -u /home/ar/Desktop/acdc22/1.sh'
+
+[Install]
+WantedBy=multi-user.target
